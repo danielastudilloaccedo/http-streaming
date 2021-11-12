@@ -264,7 +264,7 @@ export default class PlaybackWatcher {
       return this.techWaiting_();
     }
 
-    if (this.consecutiveUpdates >= 5 &&
+    if (this.consecutiveUpdates >= 10 &&
         currentTime === this.lastRecordedTime) {
       this.consecutiveUpdates++;
       this.waiting_();
